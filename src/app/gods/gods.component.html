@@ -1,8 +1,18 @@
-<h2>{{god.name | uppercase}} Details</h2>
-<div><span>id: </span>{{god.id}}</div>
-<div><span>name: </span>{{god.name}}</div>
+<!--DOM = Document Object Model -->
+<h2>My Gods</h2>
+<ul class="gods">
+  <li *ngFor="let god of gods" [class.selected]="god === selectedGod" (click)="onSelect(god)">
+    <span class="badge">{{god.id}}</span> {{god.name}}
+  </li>
+</ul>
 
-<div>
-  <label for="name">God name: </label>
-  <input id="name" [(ngModel)]="god.name" placeholder="name">
+<div *ngIf="selectedGod">
+
+  <h2>{{selectedGod.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedGod.id}}</div>
+  <div>
+    <label for="god-name">God name: </label>
+    <input id="god-name" [(ngModel)]="selectedGod.name" placeholder="name">
+  </div>
+
 </div>
