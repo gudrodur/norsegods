@@ -1,4 +1,5 @@
 <!--DOM = Document Object Model -->
+
 <h2>My Gods</h2>
 <ul class="gods">
   <li *ngFor="let god of gods" [class.selected]="god === selectedGod" (click)="onSelect(god)">
