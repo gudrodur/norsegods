@@ -10,10 +10,7 @@ import { GODS } from '../mocke-gods'
 export class GodsComponent implements OnInit {
   gods = GODS;
   selectedGod?: God;
-  //   god: God = {
-  //   id: 1,
-  //   name: 'Odin'
-  // };
+
   constructor() { }
 
   ngOnInit(): void {

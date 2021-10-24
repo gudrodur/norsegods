@@ -1,0 +1,8 @@
+<div *ngIf="god">
+
+    <h2>{{god.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{god.id}}</div>
+    <div>
+        <label for="god-name">God name: </label>
+        <input id="god-name" [(ngModel)]="god.name" placeholder="name">
+    </div>
