@@ -5,13 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GodsComponent } from './gods/gods.component';
-import { GodDetailComponent } from './god-detail/god-detail.component';
+import { GodsDetailComponent } from './gods-detail/gods-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GodsComponent,
-    GodDetailComponent
+    GodsDetailComponent
   ],
   imports: [
     BrowserModule,
