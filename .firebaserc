@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "aurora-forecast-10569": {
+      "hosting": {
+        "norsegods": [
+          "aurora-forecast-10569"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "aurora-forecast-10569"
+  }
+}

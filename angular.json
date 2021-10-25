@@ -101,6 +101,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "norsegods:build:production",
+            "firebaseProject": "aurora-forecast-10569",
+            "firebaseHostingSite": "aurora-forecast-10569"
+          }
         }
       }
     }
